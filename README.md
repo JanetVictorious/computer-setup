@@ -25,8 +25,25 @@ Add the following [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins):
 
 Install [Homebrew](https://brew.sh/).
 
-Install the following software via homebrew
-- pipenv
+Install the following software via homebrew:
+- `pipenv`
+- `terraform` & `tfenv`
+    ```shell
+    $ brew install terraform
+    > This downloads terraform
+
+    $ brew install tfenv
+    > In-case you get a linking error, run the following:
+
+    $ brew unlink terraform && brew install tfenv && brew link terraform
+
+    $ tfenv list-remote
+    $ tfenv install <terraform version>
+    $ tfenv use <terraform version>
+
+    $ tfenv --version
+    $ terraform --version
+    ```
 
 ---
 
@@ -37,8 +54,14 @@ Install [Conda](https://www.anaconda.com/products/individual).
 Follow the instructions to initialize conda.  
 Setup python environments and install `pip-tools`:
 ```shell
+# Create specific python environment
 $ conda create --name python-3.X python=3.X
 $ conda activate python-3.X
+
+# Upgrade pip to latest version
+$ pip install --upgrade pip
+
+# Install pip-tools
 $ pip install pip-tools
 ```
 
@@ -75,11 +98,6 @@ $ fi
 
 ---
 
-## Install Terraform
+## Download VS Code
 
-```shell
-$ brew install tfenv
-$ tfenv list-remote
-$ tfenv install <terraform version>
-$ tfenv use <terraform version>
-```
+Go to this [website](https://code.visualstudio.com/) and follow the instructions for downloading VS code.
