@@ -27,7 +27,9 @@ Install [Homebrew](https://brew.sh/).
 
 Install the following software via homebrew:
 - `pipenv`
+
 - `terraform` & `tfenv`
+
     ```shell
     $ brew install terraform
     > This downloads terraform
