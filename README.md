@@ -49,6 +49,12 @@ Install the following software via homebrew:
 
 ---
 
+## Install docker
+
+Install [docker desktop](https://www.docker.com/products/docker-desktop)
+
+---
+
 ## Setup conda environment
 
 Install [Conda](https://www.anaconda.com/products/individual).
