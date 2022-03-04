@@ -104,6 +104,8 @@ $     start_agent;
 $ fi
 ```
 
+> Note: Github suggest HTTPS over SSH.
+
 ---
 
 ## Download VS Code
