@@ -104,7 +104,10 @@ $     start_agent;
 $ fi
 ```
 
-> Note: Github suggest HTTPS over SSH.
+**Note:** Github suggest HTTPS over SSH for various reasons. Some comments from Github:
+> Sometimes, firewalls refuse to allow SSH connections entirely. If using [HTTPS cloning with credential caching](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git) is not an option, you can attempt to clone using an SSH connection made over the HTTPS port. Most firewall rules should allow this, but proxy servers may interfere.
+
+Using [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (GCM) you can store your credentials securely and connect to GitHub over HTTPS.
 
 ---
 
