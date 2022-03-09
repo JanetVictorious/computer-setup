@@ -55,7 +55,7 @@ Install [docker desktop](https://www.docker.com/products/docker-desktop)
 
 ---
 
-## Setup conda environment
+## (Option 1: mac intel chip) - Setup conda environment
 
 Install [Conda](https://www.anaconda.com/products/individual).
 
@@ -73,7 +73,11 @@ $ pip install --upgrade pip
 $ pip install pip-tools
 ```
 
-> If you rather use pipenv instead of conda a similar procedure can be done.
+## (Option 2: macOS ARM64 chip) - Setup pyenv
+
+New mac computers with M1 (ARM64) chip run on a different architecture and some difficulties can occur if you're using conda. By using `pyenv` we can create environments and pip to install native macOS ARM64 wheels or build packages from source.  
+
+Follow this [installation guide](https://github.com/pyenv/pyenv#installation) on Github to set up `pyenv`.
 
 ---
 
